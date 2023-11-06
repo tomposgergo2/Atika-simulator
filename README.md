@@ -1,1 +1,3 @@
-# Atika-szimul-tor
+# Atika-szimulátor
+---------------------
+
