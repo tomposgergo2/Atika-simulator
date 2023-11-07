@@ -32,13 +32,13 @@ A játék különböző helyszíneken játszódik, és mindegyik helynek saját 
 
 A játék során számos feladatot kell teljesítened, hogy boldog és sikeres maradj. Ezek a feladatok a következők:
 
-> Kedv: Minden napnak más kezdő érzelmi állapota van (60-100 között), és az órák vagy más tevékenységek lehetnek pozitív vagy negatív hatással a kedvedre.
+> **Kedv**: Minden napnak más kezdő érzelmi állapota van (60-100 között), és az órák vagy más tevékenységek lehetnek pozitív vagy negatív hatással a kedvedre.
 
-> Telefon: Minden nap elején 100 telefonszinttel kezdesz, és amikor terembe mész, lehetőséged van tölteni a telefonodat. Azonban a telefon használata vagy a töltés választása között kell döntened, és mindegyik döntés hatással van a kedvedre.
+> **Telefon**: Minden nap elején 100 telefonszinttel kezdesz, és amikor terembe mész, lehetőséged van tölteni a telefonodat. Azonban a telefon használata vagy a töltés választása között kell döntened, és mindegyik döntés hatással van a kedvedre.
 
-> Víz: Minden nap elején 100 vízszinttel kezdesz, és a lépések után 1-5 pontal csökken. Ha terembe vagy órára mész, akkor további 10-30 pontot veszítesz.
+> **Víz**: Minden nap elején 100 vízszinttel kezdesz, és a lépések után 1-5 pontal csökken. Ha terembe vagy órára mész, akkor további 10-30 pontot veszítesz.
 
-> Kaja: Minden nap elején 100 ételszinttel kezdesz, és a lépések után 1-3 pontal csökken. Ha terembe vagy órára mész, akkor további 10-30 pontot veszítesz.
+> **Kaja**: Minden nap elején 100 ételszinttel kezdesz, és a lépések után 1-3 pontal csökken. Ha terembe vagy órára mész, akkor további 10-30 pontot veszítesz.
 
 
 ---------------------------------------
