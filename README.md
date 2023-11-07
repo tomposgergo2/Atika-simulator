@@ -1,7 +1,7 @@
 # Atika-szimulátor
 ---------------------
 
-Üdvözöllek az Atika Szimulátorban! Ez egy egyszerű, de szórakoztató szimulációs játék, ahol Atika életedet éled meg. A célod az, hogy megtartsd jó kedvedet, gondoskodj a telefonodról, vízről és élelemről, miközben órákra jársz, és próbálsz boldog maradni.
+Üdvözöllek az Atika Szimulátorban! Ez egy egyszerű, de szórakoztató szimulációs játék, ahol Atika életedet éled meg. A célod az, hogy megtartsd jó kedvedet, gondoskodj a telefonodról, vízről és élelemről, miközben órákra jársz, és próbálsz életben maradni.
 
 ## Helyszínek
 A játék különböző helyszíneken játszódik, és mindegyik helynek saját jellemzői vannak:
