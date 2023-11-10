@@ -47,7 +47,9 @@ A játék során számos feladatot kell teljesítened, hogy boldog és sikeres m
 
 A játékmenet során a célod az, hogy a lehető legmagasabb kedvet, telefon-, víz- és kajaszintet tartsd fenn, miközben az iskolai helyszíneken jársz, órákat hallgatsz és döntéseket hozol a telefonhasználat és az ételvásárlás terén. A kihívás abban rejlik, hogy a nap során megfelelően egyensúlyozz ezek között a szükségletek között, hogy sikeresen végigjárd az iskolai napot.
 
-Telepítés és futtatás
+---------------------
+
+## Telepítés és futtatás
 Ehhez a játékhoz nincs szükség telepítésre. Egyszerűen indítsd el a játékot, és kezdd el a szimulációt a Szomod helyszínről. A játékmenet során kövesd az instrukciókat és próbáld meg boldog és kiegyensúlyozott maradni.
 
 --------------------
