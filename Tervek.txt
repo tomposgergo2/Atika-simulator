@@ -1,0 +1,127 @@
+Szomod 
+Kondi
+	WC
+	Büfé
+Tatai Vasutállomás 
+Győri Vasutállomás
+Jedlik A
+	PlC terem
+	Jedlik 1. szint
+		WC
+		Büfé
+		12 Irodalom
+		15 Fizika
+		14 Fizika
+		025 Matek
+	Jelik 2. szint
+		WC
+		110 Német	
+		112 Ofő
+		108 Német
+		106 Töri
+	Jedlik 3. szint
+		WC
+		204 Matek
+		T4 Szakmai Angol
+		T6 Német
+		208 Irodalom
+		212 Töri
+		202 Adatbázis
+Jedlik B 
+	Jedlik 1. szint
+		WC
+		Tornaterem Tesi 
+	Jedlik 3. szint
+		WC
+		B7 Digitális technika
+		B8 Hálózat / IKT projektmunka 
+
+
+-------------------------------Órai különlegességek--------------------------------------------------------------------------------------------------
+
+Fizika
+	Felelés: Felhasználod a mentesítőt vagy pedig felelsz 
+		mentesítő
+		felelsz 
+			hogy szól az egyenlet V = s / t valamelyik hiányzik meg hasonló könnyű egyenletek 
+PLC 
+	Kussol mert fél 
+Töri
+	Rakd sorrendbe az évszámokat 
+		ha jó akkor dicséret + kedv
+		ha rossz akkor újra és szöveg: Most már ne add a hülyét atika ha akkor se akkor meg - sok kedv
+Tesi
+	Vagy tesizii vagy nem
+		Ha igen akkor térdelj valakit oldalba [David, Zalán, Csizi]
+Német 
+	Interakció 
+		Választható: Anyázás, Zsoltozás, Halj meg 
+			embereknek [Karoly, David, Mark] 
+Digitális technika 
+	MEg akarod e osztani amint tiktokozol 
+		Pár másodperc múlva szólni fog a tanár hogy kapcsold ki akkor meg kell nyomnod hogy kilépsz vagy - nagyon sok kedv
+Halázot 
+	Basket random vagy Boxing randomnt játszol Karolyal
+Matek
+	Összeadások meg szorzások 
+		ha nrm jó akkor megkérdezik hogy te melyik általános iskolábaól jöttél ha pedig jó akkor a tnár megdicséri miyen cuki vagy
+Irodalom 
+	Ha nem tiktokozol akkor lesz egy random felelés és ott pedig ki kell választanod hogy 4 emberből ki írta az Estve című verset ha jó akkor csak kevés kedv megy le ha rossz akkor meg sok
+Angol
+	[1:I 2:am 3:From 4:Magyarország]
+	ha sikerűl ezt a sorrendet összerakni akkor atika boldogabb lesz és Megmondja hogy azért magyarosrszág mert bele élte magát ha rosszúl akkor rossz kedve lesz és sok - kedv lesz 
+Nyelvtan
+	Lehet hogy egy szöveget be kell írni mert  így szavanként vagy pedig betűnknt vagy valami igaz hamisos de ide nem tudom még mi legsen  különeges nyelvtan cucc
+Adatbázis kezelés
+	Valami sql kódot kell összerakni mint az angolosban és ha jó akkor nyilván plusz kedv ha rossz akkor meg szomi lesz
+Kondi
+	A kondis játék
+		Ki kell választani hogy  miyen nap van [Láb, Bicepsz, Tricepsz]
+		Majd ki kell választani hány kőrt vállal be max (10) // vagy nem tudom 
+			ha láb akkor (A lábnap buzis újra kell választani)
+			ha Bicepsz akkor lesz választás hogy mekkora súlyzóval csináljon tizet és amint elcseszi vagyis nem tudja megcsinálni lemegy egy kis energia meg kedv ha siker akkor pedig csak energia lesz kevesebb 
+			Ha Tricepsz akkor ki kell választanod mekkora súlyzóval csináljon felhúzást       ---||---
+		
+	
+
+---------------------------------------Atika képességei----------------------------------------------------------------------------------------------------
+
+
+Kedv (random nap elején)(60-100)	[Valamelyik órák levisznek a boldogságából valamelyik meg fel]
+Telefon(minden nap elején 100)		[Ha bemegy termekbe akkor lehetősége lesz tölteni a telefont 
+					 viszont választani a kell hogy tölt vagy pedig telefonozik -> kedv mennyiség függő ]
+					
+Víz(nap elején 100 WC-ben újratölthető)		[Minden lépés után 1-5 pontal lemegy, Ha terembe vagyis órára bemegy akkor 10-30 között megy le]
+Kaja(nap elején 100 Büfében újratölthető vagy szendvics (2-4 hoz magával naponta))	[Minden lépés után 1-3 pontal lemegy, Ha terembe vagyis órára bemegy akkor 10-30 között megy le]
+
+
+----------------------------------------Napi menetrend-------------------------------------------------------------------------------------------------------
+
+
+Reggel 
+	[Az egyik helyről a másikra kellenének ilyen átvezető szövegek]
+	Elindúl -> 10% esély hogy elalszik akkor -> kondizni elmehet 
+		-> Elindúl győrig minden helyen lesz egy kérdés hogy biztos tovább akar e menni és ki lesz írva a kedve
+		 (8 óra) Amint beér a Jedlikbe azonnal elindul a nap 7 órát kell bentöltenie ha letelt a 7 óra akkor meg kell kérdezni hogy büfé és WC kell e neki ha igen akkor az lehet utánna kidobja az iskola és akkor elindulhat haza
+		 (15:00) Elhagyja az iskolát 
+		-> Haza megy 
+		-> Tata -> Elmehet kondizni
+			-> Elmegy haza
+		(21:00)
+
+
+---------------------------------------Menü kinézete-------------------------------------------------------------------------------------------------------------
+kb.
+
+Menu : 
+	-hely
+	-hely
+	-hely
+	-hely
+	-Evés(szendvicset mindig ehet ha van) 
+
+Menu 2 :
+	[Kedved %]
+	- Biztos be akarsz jönni ? [1 igen/ 2 nem]
+	
+ 
