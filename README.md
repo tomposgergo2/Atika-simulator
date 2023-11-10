@@ -45,7 +45,7 @@ A játék során számos feladatot kell teljesítened, hogy boldog és sikeres m
 
 ## Játékmenet
 
-A játékmenet során a célod az, hogy a lehető legmagasabb kedvet, telefon-, víz- és kajaszintet tartsd fenn, miközben az iskolai helyszíneken jársz, órákat hallgatsz és döntéseket hozol a telefonhasználat és az ételvásárlás terén. A kihívás abban rejlik, hogy a nap során megfelelően egyensúlyozz ezek között a szükségletek között, hogy sikeresen végigjárd az iskolai napot.
+A játékmenet során a célod az, hogy a lehető legmagasabb kedvet, telefon-, víz- és kajaszintet tartsd fenn, miközben az iskolai helyszíneken jársz, órákon veszel részt és döntéseket hozol a telefonhasználat és az ételvásárlás terén. A kihívás abban rejlik, hogy a nap során megfelelően egyensúlyozz ezek között a szükségletek között, hogy sikeresen végigjárd az iskolai napot.
 
 ---------------------
 
