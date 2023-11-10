@@ -8,7 +8,7 @@ A játék különböző helyszíneken játszódik, és mindegyik helynek saját 
 
 > **Szomód**: A kezdeti helyszín, ahol minden nap elkezded a játékot.
 
-> **Kondi**: Szomódrol, Tatai vasútállomásról mehetsz ide mehetsz ide, ha elalszol valamelyik nap akkor utána automatikusan kondizni mész.
+> **Kondi**: Szomódrol, Tatai vasútállomásról mehetsz ide, ha elalszol valamelyik nap akkor utána automatikusan kondizni mész.
 
 > **Tatai Vasutállomás**: Innen haza vagy Győrbe tudsz menni. 
 
