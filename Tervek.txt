@@ -39,7 +39,7 @@ Jedlik B
 
 -------------------------------Órai különlegességek--------------------------------------------------------------------------------------------------
 
-Fizika
+Fizika GERGŐ
 	Felelés: Felhasználod a mentesítőt vagy pedig felelsz 
 		mentesítő
 		felelsz 
@@ -53,26 +53,26 @@ Töri KÉSZ
 Tesi KÉSZ
 	Vagy tesizii vagy nem
 		Ha igen akkor térdelj valakit oldalba [David, Zalán, Csizi]
-Német 
+Német GERGŐ
 	Interakció 
 		Választható: Anyázás, Zsoltozás, Halj meg 
 			embereknek [Karoly, David, Mark] 
-Digitális technika 
+Digitális technika GERGŐ
 	MEg akarod e osztani amint tiktokozol 
 		Pár másodperc múlva szólni fog a tanár hogy kapcsold ki akkor meg kell nyomnod hogy kilépsz vagy - nagyon sok kedv
-Halázot 
+Halázot BOTI
 	Basket random vagy Boxing randomnt játszol Karolyal
 Matek KÉSZ
 	Összeadások meg szorzások 
 		ha nrm jó akkor megkérdezik hogy te melyik általános iskolábaól jöttél ha pedig jó akkor a tnár megdicséri miyen cuki vagy
 Irodalom KÉSZ
 	Ha nem tiktokozol akkor lesz felelés évszámokat párasítanod kell az eseményekhez ha jó akkor + kevés kedv ha rossz - sok kedv
-Angol
+Angol BOTI
 	[1:I 2:am 3:From 4:Magyarország]
 	ha sikerűl ezt a sorrendet összerakni akkor atika boldogabb lesz és Megmondja hogy azért magyarosrszág mert bele élte magát ha rosszúl akkor rossz kedve lesz és sok - kedv lesz 
-Nyelvtan
+Nyelvtan BOTI
 	Lehet hogy egy szöveget be kell írni mert  így szavanként vagy pedig betűnknt vagy valami igaz hamisos de ide nem tudom még mi legsen  különeges nyelvtan cucc
-Adatbázis kezelés
+Adatbázis kezelés GERGŐ
 	Valami sql kódot kell összerakni mint az angolosban és ha jó akkor nyilván plusz kedv ha rossz akkor meg szomi lesz
 Kondi
 	A kondis játék
