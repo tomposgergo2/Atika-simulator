@@ -44,13 +44,13 @@ Fizika
 		mentesítő
 		felelsz 
 			hogy szól az egyenlet V = s / t valamelyik hiányzik meg hasonló könnyű egyenletek 
-PLC 
+PLC KÉSZ
 	Kussol mert fél 
-Töri
+Töri KÉSZ
 	Rakd sorrendbe az évszámokat 
 		ha jó akkor dicséret + kedv
 		ha rossz akkor újra és szöveg: Most már ne add a hülyét atika ha akkor se akkor meg - sok kedv
-Tesi
+Tesi KÉSZ
 	Vagy tesizii vagy nem
 		Ha igen akkor térdelj valakit oldalba [David, Zalán, Csizi]
 Német 
@@ -62,11 +62,11 @@ Digitális technika
 		Pár másodperc múlva szólni fog a tanár hogy kapcsold ki akkor meg kell nyomnod hogy kilépsz vagy - nagyon sok kedv
 Halázot 
 	Basket random vagy Boxing randomnt játszol Karolyal
-Matek
+Matek KÉSZ
 	Összeadások meg szorzások 
 		ha nrm jó akkor megkérdezik hogy te melyik általános iskolábaól jöttél ha pedig jó akkor a tnár megdicséri miyen cuki vagy
-Irodalom 
-	Ha nem tiktokozol akkor lesz egy random felelés és ott pedig ki kell választanod hogy 4 emberből ki írta az Estve című verset ha jó akkor csak kevés kedv megy le ha rossz akkor meg sok
+Irodalom KÉSZ
+	Ha nem tiktokozol akkor lesz felelés évszámokat párasítanod kell az eseményekhez ha jó akkor + kevés kedv ha rossz - sok kedv
 Angol
 	[1:I 2:am 3:From 4:Magyarország]
 	ha sikerűl ezt a sorrendet összerakni akkor atika boldogabb lesz és Megmondja hogy azért magyarosrszág mert bele élte magát ha rosszúl akkor rossz kedve lesz és sok - kedv lesz 
