@@ -47,6 +47,7 @@ namespace Atika_simulator
             NagyLista.Add(TB8);
 
             NagyLista.Add(Bufe);
+            NagyLista.Add(MaradjOtthon);
 
             Random random = new Random();
             SzendvicsekSzama = random.Next(2, 5);
@@ -64,9 +65,18 @@ namespace Atika_simulator
             int[] adatok = { Viz, Ehes, Kedve, Telefon};
             for (int i = 0; i < 4; i++)
             {
+                
                 if (adatok[i] > 100)
                     adatok[i] = 100;
                 AtiStatok[i] = adatok[i];
+                if (adatok[i] < 0)
+                {
+                    Console.WriteLine("Game Over");
+                    Console.WriteLine("Nem vigyáztál az atikádra így kifogyott valamelyik alapvető erőjéből");
+                    Thread.Sleep(10000);
+                    Environment.Exit(0);
+                }
+
             }
                 
         }
@@ -75,6 +85,7 @@ namespace Atika_simulator
         public static bool Annacska { get; set; } = true;
         public static bool NapElkezdese { get; set; } = true;
         public static int BentToltottOrak { get; set; } = 0;
+        public static bool JedlikbenVagy { get; set; } = false;
         public static int Viz { get; set; } = 100;
         public static int Ehes { get; set; } = 100;
         public static int Telefon { get; set; } = 100;
@@ -104,6 +115,12 @@ namespace Atika_simulator
             Console.WriteLine("╚═════╝░╚══════╝╚═╝╚═╝░░░░░╚═╝░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝");
             Thread.Sleep(5000);
             Console.Clear();
+        }
+        static void MaradjOtthon()
+        {
+            Console.WriteLine("\n\nAtikának rossz volt a közérzete így otthon maradt majd holnap megpróbálja újra");
+            Thread.Sleep(5000);
+            Environment.Exit(0);
         }
         static void Szomod()
         {
@@ -441,12 +458,6 @@ namespace Atika_simulator
             return visszamegy;
         }
 
-        static void AtikaOraValasztas()
-        {
-            Valasztas(12);
-            
-        }
-
         public static string[,,] Orak { get; set; } =
         {
         {/*0 Szomod*/ {"Maradjunk itthon","Tata","Kondi","Kaja","","","","","","", ""} },
@@ -456,16 +467,15 @@ namespace Atika_simulator
         {/*4 Jedlik*/ {"Go Haza","A-épület","B-épület","Kaja","Büfé","","","","","","" } },
         {/*5 AEpulet*/ {"Jedlik","1.emelt","2.emelet","3.emelet","PLC terem","Kaja","","","","",""} },
         {/*6 BEpulet*/ {"Jedlik","1.emelt","3.emelet","Kaja","","","","","","",""} },
-        {/*7 ElsoEmelet*/ {"Jedlik","2.emlet","3.emlet","WC","12.terme (Irodalom)","14.terem (Fizika)","15.terem (Fizika)","025.terem (Matek)","Büfé","Kaja",""} },
+        {/*7 ElsoEmelet*/ {"Jedlik","2.emlet","3.emlet","WC","12.terme (Irodalom)","14.terem (Fizika)","15.terem (Fizika)","025.terem (Matek)","Kaja","",""} },
         {/*8 MasodikEmelet*/ {"Jedlik","1.emelet","3.emelet","WC","106.terme (Töri)","108.terem (Német)","110.terem (Német)","112.terem (Ofő)","Kaja","",""} },
         {/*9 HarmadikEmelet*/ {"Jedlik","1.emelet","2.emelet","WC","202.terme (Adatbázis)","204.terem (Matek)","208.terem (Irodalom)","212.terem (Töri)","T4.terme  (Szakmai angol)","T6.terme  (Német)","Kaja"} },
         {/*10 ElsEmeletB*/ {"Jedlik","3.emelet","WC","Torna terme (Tesi)","Kaja","","","","","",""} },
         {/*11 HarmadikEmletB*/ {"Jedlik","1.emelet","WC","B7.terme (Digitális technika)","B8.terme (Hálózat)","Kaja","","","","",""} },
-        {/*12 HarmaikEmletB*/ {"Részt veszel Órán ?","Menjen a TikTok","","","","","","","","",""} },
         };
         public static int[,,] OrakIndex { get; set; } =
         {
-            {/*0 Szomod*/ {00, 1, 13, 14, 00, 00, 00, 00, 00, 00, 00 } },
+            {/*0 Szomod*/ {34, 1, 13, 14, 00, 00, 00, 00, 00, 00, 00 } },
             {/*1 Tata*/ {0, 2, 13, 14, 00, 00, 00, 00, 00, 00, 00 } },
             {/*2 Tatai vasútállomás*/ { 1, 3, 14, 00, 00, 00, 00, 00, 00, 00, 00 } },
             {/*3 Győri Vasútállomás*/ { 2, 4, 14, 00 ,00 ,00, 00, 00, 00, 00, 00 } },
@@ -477,11 +487,11 @@ namespace Atika_simulator
             {/*9 HarmadikEmelet*/ { 4, 7, 8, 12, 24, 25, 26, 27, 28, 29, 14 } },
             {/*10 ElsEmeletB*/ { 4, 11, 12, 30, 14, 00, 00, 00, 00, 00, 00 } },
             {/*11 HarmadikEmletB*/ { 4, 10, 12, 31, 32, 14, 00, 00, 00, 00, 00 } },
-            {/*12 HarmadikEmletB*/ { 34, 35, 00, 00, 00, 00, 00, 00, 00, 00, 00 } },
         };
         static void Valasztas(int melyikHely)
         {
-            int[] Hosszok = { 4, 4, 3, 3, 5, 6, 4, 10, 9, 11, 5, 6 , 2};
+            Console.CursorVisible = false;
+            int[] Hosszok = { 4, 4, 3, 3, 5, 6, 4, 9, 9, 11, 5, 6 , 2};
             Update();
             Console.Clear();
             AtikaEroKiiras();
@@ -525,18 +535,34 @@ namespace Atika_simulator
                 if (a == ConsoleKey.Enter)
                 {
                     Random rnd = new Random();
-                    Viz -= rnd.Next(2, 6);
-                    Ehes -= rnd.Next(2, 6);
-                    Kedve -= rnd.Next(2, 4);
-                    Telefon -= rnd.Next(2, 4);
-
-                    if (OrakIndex[melyikHely, 0, b] > 15 && OrakIndex[melyikHely, 0, b] < 33)
+                    if (OrakIndex[melyikHely, 0, b] == 3 && BentToltottOrak > 6)
                     {
-                        AtikaOraValasztas();
+                        Viz -= rnd.Next(2, 6);
+                        Ehes -= rnd.Next(2, 6);
+                        Kedve -= rnd.Next(2, 4);
+                        Telefon -= rnd.Next(2, 4);
+                        NagyLista[OrakIndex[melyikHely,0,b]].Invoke();
+                        Console.Clear();
+                        Update();
                     }
-                    NagyLista[OrakIndex[melyikHely,0,b]].Invoke();
-                    Console.Clear();
-                    Update();
+                    else if (JedlikbenVagy == true && OrakIndex[melyikHely, 0, b] == 3 && BentToltottOrak < 7 )
+                    {
+                        Console.WriteLine($"Sajnos Atinak ma még bent kell maradnia {7 - BentToltottOrak} órát utánna mehet csak haza. :(");
+                        Thread.Sleep(2500);
+                        Console.Clear();
+                    }
+                    else
+                    {
+                        if (OrakIndex[melyikHely, 0, b] == 4)
+                            JedlikbenVagy = true;
+                        Viz -= rnd.Next(2, 6);
+                        Ehes -= rnd.Next(2, 6);
+                        Kedve -= rnd.Next(2, 4);
+                        Telefon -= rnd.Next(2, 4);
+                        NagyLista[OrakIndex[melyikHely, 0, b]].Invoke();
+                        Console.Clear();
+                        Update();
+                    }
                 }
                 if (a == ConsoleKey.DownArrow) b++;
                 if (a == ConsoleKey.UpArrow) b--;
@@ -571,7 +597,9 @@ namespace Atika_simulator
                         Console.WriteLine($"   |_________________________________|");
                     } 
                 }
+                
             }
+
         }
         static void KondiGame()
         {
@@ -663,20 +691,24 @@ namespace Atika_simulator
             Console.CursorVisible = true;
             isCanceled = 1;
         
-
+            Thread.Sleep(300);
             Console.Clear();
             double maradekido = 10 - maradek / 1000;
             if (maradekido < 0)
             {
-                Console.WriteLine("Az időd lejárt Sajnos vesztettél atika így elveszít 20 kedv pontot :(");
+                Console.WriteLine("\n\n\tAz időd lejárt Sajnos vesztettél atika így elveszít 20 kedv pontot :(");
                 Kedve -= 20;
+                Ehes -= 15;
+                Viz -= 20;
                 Update();
             }
             else
             {
-                Console.WriteLine("Gratulálunk!! Atikának sikerült ez a sett (+5 Kedv)");
+                Console.WriteLine("\n\n\tGratulálunk!! Atikának sikerült ez a sett (+5 Kedv)");
                 Kedve += 5;
-                Console.WriteLine($"Ennyi időd maradt: {maradekido:f2}s");
+                Ehes -= 15;
+                Viz -= 20;
+                Console.WriteLine($"\tEnnyi időd maradt: {maradekido:f2}s");
                 Update();
             }
             Thread.Sleep(5000);
@@ -684,11 +716,18 @@ namespace Atika_simulator
 
         static int kivalasztas()
         {
-            Console.WriteLine("Hány kg szeretnél nyomni?");
+            AtikaEroKiiras();
+            Console.WriteLine("\tHány kg szeretnél nyomni?\t (Ha atika nem tudja kinyomni akkor -20 kedv pontot fog kapni figyelj erre)\n\t\t\t\t\t(Alapvető minuszok: -15 víz és kaja potn )\n");
+            Console.Write("  ====================================================================================================================\n  ");
+            Console.WriteLine("  _________________________________");
             for (int i = 1; i < 10; i++)
             {
-
-                Console.WriteLine($"{i}. {(i * 2 + 10) * 2}kg");
+                Console.Write($" {i}.|\t");
+                Console.Write($"{(i * 2 + 10) * 2}kg");
+                int top = Console.CursorTop;
+                Console.SetCursorPosition(37, top);
+                Console.WriteLine("|");
+                Console.WriteLine($"   |_________________________________|");
             }
             char valasztasod;
             do
@@ -696,9 +735,19 @@ namespace Atika_simulator
                 valasztasod = Console.ReadKey(true).KeyChar;
             } 
             while (valasztasod > 57 || valasztasod <= 48);
-                return ((valasztasod - 48) * 2) + 10;
+            Console.Clear();
+            Console.WriteLine("\n\n\tA kinyomást a D és K billentyűzettel tudod csinálni. Nyomkodd őket amilyen gyorsan csak tudod!");
+            Thread.Sleep(5000);
+            return ((valasztasod - 48) * 2) + 10;
+
+
         }
 
+        static void PisslantasMiniGame()
+        {
+            Console.WriteLine($"\n\n\t\t Atika elfelejtett pislantani lérlek segíts neki és nyomj meg egy gombot hogy pislantson.");
+            Console.ReadKey();
+        }
 
         //static string AtikaOraszoveg()
         //{
