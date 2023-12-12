@@ -185,21 +185,21 @@ namespace Atika_simulator
 
         static void T12()
         {
-
+            Irodalom.IrodalomGame();
             BentToltottOrak += 1;
             Console.WriteLine("12 terem \n Irodalom van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void T14()
         {
-
+            Fizika.FizikaGame();
             BentToltottOrak += 1;
             Console.WriteLine("14 terem \n Fizika van atika szenved");
             Thread.Sleep(2000);
         }
         static void T15()
         {
-
+            Fizika.FizikaGame();
             BentToltottOrak += 1;
             Console.WriteLine("15 terem \n Fizika van atika szenved");
             Thread.Sleep(2000);
@@ -240,7 +240,7 @@ namespace Atika_simulator
         }
         static void T112()
         {
-
+            
             BentToltottOrak += 1;
             Console.WriteLine("112 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -266,7 +266,7 @@ namespace Atika_simulator
         }
         static void T208()
         {
-
+            Irodalom.IrodalomGame();
             BentToltottOrak += 1;
             Console.WriteLine("208 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -280,7 +280,7 @@ namespace Atika_simulator
         }
         static void TT4()
         {
-
+            
             BentToltottOrak += 1;
             Console.WriteLine("T4 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
