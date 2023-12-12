@@ -4,12 +4,12 @@ namespace Atika_simulator
 {
     internal class Program
     {
-        
-
         static object consoleLock = new object();
-        
         static void Main(string[] args)
         {
+        
+            Tori newObject = new Tori();
+            
             #region Add, Data
             NagyLista.Add(Szomod); 
             NagyLista.Add(Tata);
@@ -60,7 +60,7 @@ namespace Atika_simulator
         }
 
         #region Adatok
-        static void Update()
+        public static void Update()
         {
             int[] adatok = { Viz, Ehes, Kedve, Telefon};
             for (int i = 0; i < 4; i++)
@@ -80,6 +80,7 @@ namespace Atika_simulator
             }
                 
         }
+
         public static List<Action> NagyLista = new List<Action>();
 
         public static bool Annacska { get; set; } = true;
@@ -205,7 +206,7 @@ namespace Atika_simulator
         }
         static void T025()
         {
-
+            Matek.MatekGame();
             BentToltottOrak += 1;
             Console.WriteLine("025 terem \n Matek van Atika a sötétségből a homály felé mozog");
             Thread.Sleep(2000);
@@ -218,21 +219,21 @@ namespace Atika_simulator
 
         static void T106()
         {
-
+            Tori.ToriGame();
             BentToltottOrak += 1;
             Console.WriteLine("106 terem \n Töri van Atika próbál figyelni");
             Thread.Sleep(2000);
         }
         static void T108()
         {
-
+            Nemet.NemetGame();
             BentToltottOrak += 1;
             Console.WriteLine("108 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void T110()
         {
-
+            Nemet.NemetGame();
             BentToltottOrak += 1;
             Console.WriteLine("110 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -258,7 +259,7 @@ namespace Atika_simulator
         }
         static void T204()
         {
-
+            Matek.MatekGame();  
             BentToltottOrak += 1;
             Console.WriteLine("204 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -272,7 +273,7 @@ namespace Atika_simulator
         }
         static void T212()
         {
-
+            Tori.ToriGame();
             BentToltottOrak += 1;
             Console.WriteLine("212 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -286,7 +287,7 @@ namespace Atika_simulator
         }
         static void TT6()
         {
-
+            Nemet.NemetGame();
             BentToltottOrak += 1;
             Console.WriteLine("T6 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -298,7 +299,7 @@ namespace Atika_simulator
 
         static void TTesi()
         {
-
+            Tesi.TesiGame();
             BentToltottOrak += 1;
             Console.WriteLine("Tesi terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
