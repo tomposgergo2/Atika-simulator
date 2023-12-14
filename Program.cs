@@ -131,7 +131,6 @@ namespace Atika_simulator
         {
             Valasztas(1);
         }
-
         static void TataiVasutallomas()
         {
             Valasztas(2);
@@ -147,7 +146,6 @@ namespace Atika_simulator
 
         static void Jedlik()
         {
-
             Valasztas(4);
         }
         static void AEpulet()
