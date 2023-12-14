@@ -1,12 +1,15 @@
-﻿namespace PLC
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atika_simulator
 {
-    internal static class Program
+    internal class PLC
     {
-        static void Main(string[] args)
+        public static void PLCGame()
         {
-            int[] statok = { 1, 2, 3, 4, };
-            int kedv = 100;
-            int aksi = 100;
             int aksiadat = 0;
             int kedvadat = 0;
 
@@ -57,7 +60,7 @@
                 if (valasz1 == "+" || valasz1 == "pozitív" || valasz1 == "pozitiv")
                 {
                     Console.WriteLine("Ügyes vagy kismackó, most pislogj egyet!");
-                    kedv += 20;
+                    Program.Kedve += 20;
                 }
 
                 else if (valasz1 == "-" || valasz1 == "negatív" || valasz1 == "negativ")
@@ -65,8 +68,8 @@
                     Console.WriteLine("Majdnem... 50-50 volt, maradj inkább a tiktoknál!");
                     Console.WriteLine("Na de előtte van mégegy esélyed...");
 
-                    kedv -= 10;
-                    aksi -= 10;
+                    Program.Kedve -= 10;
+                    Program.Telefon -= 10;
 
                     aksiadat += 10;
                     kedvadat += 10;
@@ -77,8 +80,8 @@
                     Console.WriteLine("Jóóbutavagy, maradj inkább a tiktoknál");
                     Console.WriteLine("Na de előtte van mégegy esélyed...");
 
-                    kedv -= 10;
-                    aksi -= 10;
+                    Program.Kedve -= 10;
+                    Program.Telefon -= 10;
 
                     aksiadat += 10;
                     kedvadat += 10;
@@ -100,15 +103,15 @@
                 if (valasz2 == "-" || valasz2 == "negatív" || valasz2 == "negativ")
                 {
                     Console.WriteLine("Ügyes vagy kismackó, most pislogj egyet!");
-                    kedv += 20;
+                    Program.Kedve += 20;
                 }
 
                 else if (valasz2 == "+" || valasz2 == "pozitív" || valasz2 == "pozitiv")
                 {
                     Console.WriteLine("Ez sem jött össze... Most már tényleg maradj inkább a tiktoknál!");
 
-                    kedv -= 10;
-                    aksi -= 10;
+                    Program.Kedve -= 10;
+                    Program.Telefon -= 10;
 
                     aksiadat += 10;
                     kedvadat += 10;
@@ -117,8 +120,8 @@
                 {
                     Console.WriteLine("Jóóbutavagy, most már tényleg maradj inkább a tiktoknál");
 
-                    kedv -= 10;
-                    aksi -= 10;
+                    Program.Kedve -= 10;
+                    Program.Telefon -= 10;
 
                     aksiadat += 10;
                     kedvadat += 10;
@@ -159,7 +162,7 @@
 
                 if (aksiadat == 20)
                 {
-                    Console.WriteLine() ;
+                    Console.WriteLine();
                     Console.WriteLine($"\n{aksiadat}%-ot merült a telefonod :(");
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.ForegroundColor = ConsoleColor.Black;
@@ -173,5 +176,6 @@
 
             }
         }
+    
     }
 }

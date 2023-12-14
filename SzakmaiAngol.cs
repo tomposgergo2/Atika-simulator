@@ -1,29 +1,26 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Nyelvtan_minigame
-
+namespace Atika_simulator
 {
-    class Program
+    internal class SzakmaiAngol
     {
-        static Timer timer;
-        static bool gameLost = false;
-        static object cursorLock = new object();
+        public static object cursorLock = new object();
         public static int value { get; set; } = 0;
-        static void Main(string[] args)
+        public static void SzakmaiAngolGame()
         {
 
 
             int kedv = 100;
             Random random = new Random();
 
-            string[] helyes = {"ly", "j", "ly", "", "j", "ly", "j", "j", "", "j", "j"};
-            string[] kiegeszites = {"hü_e", "ka_a", "sú_","di_ó","sú_os", "pá_a", "kussol_", "hal_ meg", "kami_on", "sa_t", "se_tosztódás", };
+            string[] angol = { "house", "hat", "name", "dog", "cat", "flower", "ball", "table", "chair", "sky", "fire", "water" };
+            string[] magyar = { "ház", "kalap", "név", "kutya", "macska", "virág", "labda", "asztal", "szék", "égbolt", "tűz", "víz" };
 
-            Console.WriteLine("Megérkeztél a nyelvtan órára! (Már ha részt veszel az órán....\n");
+            Console.WriteLine("Megérkeztél az angol órára! (Már ha részt veszel az órán....)\n");
 
             Console.Write("1. Telefonozol az órán --> ");
 
@@ -44,17 +41,18 @@ namespace Nyelvtan_minigame
             Console.Write("%");
 
 
-            Console.WriteLine("\n2. Mintadiák leszel (vagy nem)");
+            Console.WriteLine("\n\n2. Mintadiák leszel (vagy nem)");
 
-            Console.Write("Szóval? ");
+            Console.Write("\nSzóval? ");
             string valasztas = Console.ReadLine();
+
+            Console.WriteLine();
 
 
 
             if (valasztas == "1")
             {
-                Console.Clear();
-                Console.WriteLine("Egy kis TikTok");
+                Console.WriteLine("\nEgy kis TikTok");
                 Thread.Sleep(2000);
 
                 for (int i = 0; i < 10; i++)
@@ -84,16 +82,16 @@ namespace Nyelvtan_minigame
             else if (valasztas == "2")
             {
                 Console.Clear();
-                Console.WriteLine("A feladatod az lesz, hogy kiegészítsd a szavakat 'j'-vel és 'ly'-vel. Ügyi legyél <3\n");
+                Console.WriteLine("A feladatod az lesz, hogy a magyar szavak alá írd le az angol megfelelőjüket! Ügyi legyél <3");
                 Thread.Sleep(4000);
                 Console.Clear();
-                for (int i = 0; i < helyes.Length; i++)
+                for (int i = 0; i < angol.Length; i++)
                 {
-                    string index = helyes[i];
-                    string kiegSorszam = kiegeszites[i];
-                    string helyesSorszam = helyes[i];
+                    string index = angol[i];
+                    string helyesAngol = angol[i];
+                    string helyesMagyar = magyar[i];
 
-                    Console.WriteLine($"Egészítsd ki a következő szót: {kiegSorszam}");
+                    Console.WriteLine($"Mi az angol megfelelője a {helyesMagyar} szónak?");
 
                     Console.Write("Válasz: ");
 
@@ -104,7 +102,7 @@ namespace Nyelvtan_minigame
                     {
                         string felhasznaloValasz = Console.ReadLine();
 
-                        if (felhasznaloValasz == helyesSorszam)
+                        if (felhasznaloValasz == helyesAngol)
                         {
                             Console.WriteLine("Ügyes kismackó vagy!");
                             Thread.Sleep(1500);
@@ -124,7 +122,7 @@ namespace Nyelvtan_minigame
                             }
                             else if (probalkozasok == 3)
                             {
-                                Console.WriteLine($"Hármat sorozatban? Gratulálok... Véget ért az óra. A helyes válasz: {helyesSorszam}");
+                                Console.WriteLine($"Hármat sorozatban? Gratulálok... Véget ért az óra. A helyes válasz: {helyesAngol}");
                                 kedv -= 30;
                                 Console.WriteLine($"Jelenlegi kedved: {kedv} ");
                                 Console.WriteLine("------------------------------");

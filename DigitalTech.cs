@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Digitális_technika
+namespace Atika_simulator
 {
-    internal class Program
+    internal class DigitalTechnika
     {
-        static Timer timer;
-        static bool gameLost = false;
         static object cursorLock = new object();
         public static int value { get; set; } = 0;
-        public static int kedv { get; set; } = 100;
-        public static int aksi { get; set; } = 100;
-        static void Main(string[] args)
+        public static void DigitalTechGame()
         {
             Console.WriteLine("Megjöttél a szaunába... Unalmas mint a szar szóval had szóljon a TikTok!");
-            
+
             Thread.Sleep(4000);
 
             Console.WriteLine("De még előtte a döntés a te kezedben áll:\n");
@@ -31,7 +27,7 @@ namespace Digitális_technika
                 Console.WriteLine("Szépen békésen (hangosan) tiktokozol, nem fenyeget semmi veszély...");
                 for (int i = 0; i < 3; i++)
                 {
-  
+
                     if (value == 0)
                     {
                         valasz1();
@@ -48,8 +44,8 @@ namespace Digitális_technika
                         if (valasztas2 == 1)
                         {
                             Console.WriteLine("Folytattad tovább... Te tudod");
-                            kedv += 20;
-                            aksi -= 60;
+                            Program.Kedve += 20;
+                            Program.Telefon -= 60;
                             Console.WriteLine("\nA telód majdnem halott de legalább boldog a kis fejed :')");
                             Console.BackgroundColor = ConsoleColor.Green;
 
@@ -75,7 +71,7 @@ namespace Digitális_technika
                             Console.WriteLine("Kész csoda!! Eltetted azt a szutykot...\n");
                             Console.WriteLine("Viszont ez mocsok unalmas lesz...\n");
                             Console.WriteLine("A kedved 20-szal csökkent");
-                            kedv -= 20;
+                            Program.Kedve -= 20;
                         }
                     }
 
@@ -89,7 +85,7 @@ namespace Digitális_technika
                 }
 
             }
-            
+
             if (valasztas == "2")
             {
                 Console.WriteLine("Egy kis TikTok");
@@ -116,7 +112,7 @@ namespace Digitális_technika
             }
 
 
-            
+
         }
 
         static void valasz1()
@@ -191,7 +187,7 @@ namespace Digitális_technika
 
 
         }
-        
+
 
         static void valasz2()
         {
@@ -282,4 +278,3 @@ namespace Digitális_technika
 
     }
 }
-    
