@@ -14,7 +14,7 @@ namespace Atika_simulator
             static void Main()
             {
                 Console.WriteLine("Megérkeztél német órára!");
-
+                Program.Telefon += 10;
                 KiirLehetosegek();
                 Választás();
 

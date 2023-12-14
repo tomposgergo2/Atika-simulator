@@ -57,7 +57,7 @@ namespace Atika_simulator
                         else if (probalkozasok == 2)
                         {
                             Console.WriteLine($"Sajnálom, két rossz válasz után nincs több lehetőséged. A helyes válasz: {helyesEvszam}");
-                            Program.Kedve -= 30;
+                            Program.Kedve -= 20;
                             Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                             Console.WriteLine("------------------------------");
                             Console.WriteLine("Véget ért az óra");

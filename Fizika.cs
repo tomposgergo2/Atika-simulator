@@ -37,6 +37,7 @@ namespace Atika_simulator
                 Console.WriteLine("------------------------------");
                 Console.WriteLine("Véget ért az óra");
                 Console.ReadLine();
+                Program.Telefon += 10;
                 return;
             }
 
