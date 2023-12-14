@@ -43,6 +43,7 @@ namespace Atika_simulator
             }
 
             // Játék folytatása
+            Program.Telefon += 20;
             for (int i = 0; i < valasz.Length; i++)
             {
                 int index = random.Next(valasz.Length);

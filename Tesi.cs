@@ -21,7 +21,7 @@ namespace Atika_simulator
             {
                 Console.WriteLine("  Atika nem tesizik. Véget ért az óra.");
                 Program.Kedve -= 10;
-                Program.Telefon += 35;
+                Program.Telefon -= 35;
                 Console.WriteLine($"  Jelenlegi kedved: {Program.Kedve}");
                 Console.WriteLine($"  Akkumulátor szint: {Program.Telefon}");
                 Console.WriteLine("  ------------------------------");
@@ -37,6 +37,7 @@ namespace Atika_simulator
                     case "dávid":
                         Console.WriteLine("  Oldalba térdelted a Dávidot.");
                         Program.Kedve += 30;
+                        Program.Telefon += 30;
                         Console.WriteLine($"  Jelenlegi kedved: {Program.Kedve}");
                         Console.WriteLine("------------------------------");
                         Console.WriteLine("  Véget ért az óra.");
@@ -44,6 +45,8 @@ namespace Atika_simulator
                     case "csizi":
                         Console.WriteLine("  Oldalba térdelted a Csizit.");
                         Program.Kedve += 30;
+                        Program.Telefon += 30;
+
                         Console.WriteLine($"  Jelenlegi kedved: {Program.Kedve}");
                         Console.WriteLine("  ------------------------------");
                         Console.WriteLine("  Véget ért az óra.");
@@ -51,6 +54,8 @@ namespace Atika_simulator
                     case "zalán":
                         Console.WriteLine("  Oldalba térdelted a Márkot.");
                         Program.Kedve += 30;
+                        Program.Telefon += 30;
+
                         Console.WriteLine($"  Jelenlegi kedved: {Program.Kedve}");
                         Console.WriteLine("  ------------------------------");
                         Console.WriteLine("  Véget ért az óra.");

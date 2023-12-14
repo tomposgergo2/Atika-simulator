@@ -52,6 +52,7 @@ namespace Atika_simulator
             {
                 Console.WriteLine("\nEgy kis TikTok");
                 Thread.Sleep(2000);
+                Program.Telefon -= 20;
 
                 for (int i = 0; i < 10; i++)
                 {
@@ -79,6 +80,7 @@ namespace Atika_simulator
 
             else if (valasztas == "2")
             {
+                Program.Telefon += 20;
                 Console.Clear();
                 Console.WriteLine("A feladatod az lesz, hogy a magyar szavak alá írd le az angol megfelelőjüket! Ügyi legyél <3");
                 Thread.Sleep(4000);

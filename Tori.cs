@@ -17,6 +17,7 @@ namespace Atika_simulator
             Console.WriteLine("  Üdv a történelem órán!");
             Console.Write("  ====================================================================================================================\n\n  ");
 
+            Program.Telefon += 15;
             for (int i = 0; i < evszamok.Length; i++)
             {
                 int index = random.Next(evszamok.Length);

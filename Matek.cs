@@ -23,6 +23,7 @@ namespace Atika_simulator
 
             if (telefonValasz == "igen")
             {
+                Program.Telefon -= 20; 
                 Console.Write("Hány TikTok videót nézel meg? (5, 10, 15): ");
                 int tiktokSzam = int.Parse(Console.ReadLine());
 
@@ -53,7 +54,7 @@ namespace Atika_simulator
             }
             else
             {
-
+                Program.Telefon += 20;
                 Console.WriteLine("Attila figyelj és csináld meg a feladatot!");
                 Program.Telefon += 25;
                 for (int i = 0; i < 2; i++) // Két kérdés

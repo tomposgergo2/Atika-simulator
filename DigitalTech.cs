@@ -26,6 +26,7 @@ namespace Atika_simulator
 
             if (valasztas == "1")
             {
+                Program.Telefon -= 10;
                 Console.WriteLine("Szépen békésen (hangosan) tiktokozol, nem fenyeget semmi veszély...");
                 for (int i = 0; i < 3; i++)
                 {
@@ -90,6 +91,7 @@ namespace Atika_simulator
 
             if (valasztas == "2")
             {
+                Program.Telefon -= 10;
                 Console.WriteLine("Egy kis TikTok");
                 for (int i = 0; i < 10; i++)
                 {

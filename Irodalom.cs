@@ -48,6 +48,7 @@ namespace Atika_simulator
 
             if (valasztas == "1")
             {
+                Program.Telefon -= 20;
                 Console.WriteLine("\nEgy kis TikTok");
                 Thread.Sleep(2000);
 
@@ -77,6 +78,7 @@ namespace Atika_simulator
 
             else if (valasztas == "2")
             {
+                Program.Telefon += 20;
                 for (int i = 0; i < evszamok.Length; i++)
                 {
                     int index = random.Next(evszamok.Length);

@@ -46,6 +46,7 @@ namespace Atika_simulator
 
             if (valasztas == "1")
             {
+                Program.Telefon -= 20; 
                 Console.Clear();
                 Console.WriteLine("Egy kis TikTok");
                 Thread.Sleep(2000);
@@ -76,6 +77,7 @@ namespace Atika_simulator
 
             else if (valasztas == "2")
             {
+                Program.Telefon += 20;
                 Console.Clear();
                 Console.WriteLine("A feladatod az lesz, hogy kiegészítsd a szavakat 'j'-vel és 'ly'-vel. Ügyi legyél <3\n");
                 Thread.Sleep(4000);
