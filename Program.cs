@@ -8,7 +8,6 @@ namespace Atika_simulator
         static void Main(string[] args)
         {
         
-            Tori newObject = new Tori();
             
             #region Add, Data
             NagyLista.Add(Szomod); 
@@ -48,6 +47,7 @@ namespace Atika_simulator
 
             NagyLista.Add(Bufe);
             NagyLista.Add(MaradjOtthon);
+            NagyLista.Add(T022);
 
             Random random = new Random();
             SzendvicsekSzama = random.Next(2, 5);
@@ -211,6 +211,14 @@ namespace Atika_simulator
             Console.WriteLine("025 terem \n Matek van Atika a sötétségből a homály felé mozog");
             Thread.Sleep(2000);
         }
+        
+        static void T022()
+        {
+            Nyelvtan.NyelvtanGame();
+            BentToltottOrak += 1;
+            Console.WriteLine("025 terem \n Matek van Atika a sötétségből a homály felé mozog");
+            Thread.Sleep(2000);
+        }
 
 
         #endregion
@@ -240,7 +248,10 @@ namespace Atika_simulator
         }
         static void T112()
         {
-            
+            Console.WriteLine("Részt veszel az órán vagynem ?");
+            Thread.Sleep(800);
+            Console.WriteLine("Csak vicceltem megy a tiktok");
+            Telefon -= 20; 
             BentToltottOrak += 1;
             Console.WriteLine("112 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -252,7 +263,7 @@ namespace Atika_simulator
 
         static void T202()
         {
-
+            AdatBazis.AdtaBazisGame();
             BentToltottOrak += 1;
             Console.WriteLine("202 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -280,7 +291,7 @@ namespace Atika_simulator
         }
         static void TT4()
         {
-            
+            SzakmaiAngol.SzakmaiAngolGame();
             BentToltottOrak += 1;
             Console.WriteLine("T4 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
@@ -311,7 +322,7 @@ namespace Atika_simulator
 
         static void TB7()
         {
-
+            DigitalTechnika.DigitalTechGame();
             BentToltottOrak += 1;
             //Nyomod szücsi
             Console.Clear();
@@ -320,7 +331,7 @@ namespace Atika_simulator
         }
         static void TB8()
         {
-
+            
             BentToltottOrak += 1;
             //Hörbi geci
             Console.Clear();
@@ -380,7 +391,7 @@ namespace Atika_simulator
 
         static void TPLC()
         {
-
+            PLC.PLCGame();
             BentToltottOrak += 1;
             Console.WriteLine("Plc van");
             Thread.Sleep(2000);
@@ -468,7 +479,7 @@ namespace Atika_simulator
         {/*4 Jedlik*/ {"Go Haza","A-épület","B-épület","Kaja","Büfé","","","","","","" } },
         {/*5 AEpulet*/ {"Jedlik","1.emelt","2.emelet","3.emelet","PLC terem","Kaja","","","","",""} },
         {/*6 BEpulet*/ {"Jedlik","1.emelt","3.emelet","Kaja","","","","","","",""} },
-        {/*7 ElsoEmelet*/ {"Jedlik","2.emlet","3.emlet","WC","12.terme (Irodalom)","14.terem (Fizika)","15.terem (Fizika)","025.terem (Matek)","Kaja","",""} },
+        {/*7 ElsoEmelet*/ {"Jedlik","2.emlet","3.emlet","WC","12.terme (Irodalom)","14.terem (Fizika)","15.terem (Fizika)","025.terem (Matek)","022.terem (Nyelvtan)","Kaja",""} },
         {/*8 MasodikEmelet*/ {"Jedlik","1.emelet","3.emelet","WC","106.terme (Töri)","108.terem (Német)","110.terem (Német)","112.terem (Ofő)","Kaja","",""} },
         {/*9 HarmadikEmelet*/ {"Jedlik","1.emelet","2.emelet","WC","202.terme (Adatbázis)","204.terem (Matek)","208.terem (Irodalom)","212.terem (Töri)","T4.terme  (Szakmai angol)","T6.terme  (Német)","Kaja"} },
         {/*10 ElsEmeletB*/ {"Jedlik","3.emelet","WC","Torna terme (Tesi)","Kaja","","","","","",""} },
@@ -483,7 +494,7 @@ namespace Atika_simulator
             {/*4 Jedlik*/ { 3, 5, 6, 14, 33, 00, 00, 00, 00, 00, 00 } },
             {/*5 AEpulet*/ { 4, 7, 8, 9, 15, 14, 00, 00, 00, 00, 00 } },
             {/*6 BEpulet*/ { 4, 10, 11, 14, 00, 00, 00, 00, 00, 00, 00} },
-            {/*7 ElsoEmelet*/ { 4, 8, 9, 12, 17, 18, 19, 16, 14, 00, 00 } },
+            {/*7 ElsoEmelet*/ { 4, 8, 9, 12, 17, 18, 19, 16, 35, 14, 00 } },
             {/*8 MasodikEmelet*/ { 4, 7, 9, 12, 20, 21, 22, 23, 14, 00, 00  } },
             {/*9 HarmadikEmelet*/ { 4, 7, 8, 12, 24, 25, 26, 27, 28, 29, 14 } },
             {/*10 ElsEmeletB*/ { 4, 11, 12, 30, 14, 00, 00, 00, 00, 00, 00 } },
@@ -492,7 +503,7 @@ namespace Atika_simulator
         static void Valasztas(int melyikHely)
         {
             Console.CursorVisible = false;
-            int[] Hosszok = { 4, 4, 3, 3, 5, 6, 4, 9, 9, 11, 5, 6 , 2};
+            int[] Hosszok = { 4, 4, 3, 3, 5, 6, 4, 10, 9, 11, 5, 6 , 2};
             Update();
             Console.Clear();
             AtikaEroKiiras();

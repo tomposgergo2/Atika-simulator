@@ -1,29 +1,26 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Irodalom_minigame
-
+namespace Atika_simulator
 {
-    class Program
+    internal class Nyelvtan
     {
-        static Timer timer;
-        static bool gameLost = false;
         static object cursorLock = new object();
         public static int value { get; set; } = 0;
-        static void Main(string[] args)
+        public static void NyelvtanGame()
         {
 
 
             int kedv = 100;
             Random random = new Random();
 
-            int[] evszamok = {1823,1837,0411,1848,1590,31};
-            string[] esemenyek = { "Himnusz kiadása","Szózat" , "Magyar költészet napja (HHNN)", "Nemzeti dal", "Első magyar nyelvű Biblia", "Hány versszakos a walesi bárdok", };
+            string[] helyes = { "ly", "j", "ly", "", "j", "ly", "j", "j", "", "j", "j" };
+            string[] kiegeszites = { "hü_e", "ka_a", "sú_", "di_ó", "sú_os", "pá_a", "kussol_", "hal_ meg", "kami_on", "sa_t", "se_tosztódás", };
 
-            Console.WriteLine("Megérkeztél az irodalom órára!\n");
+            Console.WriteLine("Megérkeztél a nyelvtan órára! (Már ha részt veszel az órán....\n");
 
             Console.Write("1. Telefonozol az órán --> ");
 
@@ -53,7 +50,8 @@ namespace Irodalom_minigame
 
             if (valasztas == "1")
             {
-                Console.WriteLine("\nEgy kis TikTok");
+                Console.Clear();
+                Console.WriteLine("Egy kis TikTok");
                 Thread.Sleep(2000);
 
                 for (int i = 0; i < 10; i++)
@@ -63,8 +61,8 @@ namespace Irodalom_minigame
                         valasz();
 
 
-                    Console.Clear();
-                    Console.WriteLine($"Na ennyi volt a TikTok erre az órára");
+                        Console.Clear();
+                        Console.WriteLine($"Na ennyi volt a TikTok erre az órára");
 
                     }
 
@@ -80,37 +78,37 @@ namespace Irodalom_minigame
 
             }
 
-            else if(valasztas == "2")
+            else if (valasztas == "2")
             {
-                for (int i = 0; i < evszamok.Length; i++)
+                Console.Clear();
+                Console.WriteLine("A feladatod az lesz, hogy kiegészítsd a szavakat 'j'-vel és 'ly'-vel. Ügyi legyél <3\n");
+                Thread.Sleep(4000);
+                Console.Clear();
+                for (int i = 0; i < helyes.Length; i++)
                 {
-                    int index = random.Next(evszamok.Length);
-                    int helyesEvszam = evszamok[index];
-                    string helyesEsemeny = esemenyek[index];
+                    string index = helyes[i];
+                    string kiegSorszam = kiegeszites[i];
+                    string helyesSorszam = helyes[i];
 
-                    Console.WriteLine($"Mikor volt a(z) {helyesEsemeny}?");
+                    Console.WriteLine($"Egészítsd ki a következő szót: {kiegSorszam}");
 
                     Console.Write("Válasz: ");
-                    int felhasznaloValasz;
+
 
                     int probalkozasok = 0;
 
                     while (probalkozasok < 3)
                     {
-                        while (!int.TryParse(Console.ReadLine(), out felhasznaloValasz))
-                        {
-                            Console.WriteLine("Hibás input. Kérlek adj meg egy évszámot!");
-                            Console.Write("Válasz: ");
-                        }
+                        string felhasznaloValasz = Console.ReadLine();
 
-                        if (felhasznaloValasz == helyesEvszam)
+                        if (felhasznaloValasz == helyesSorszam)
                         {
                             Console.WriteLine("Ügyes kismackó vagy!");
-                            kedv += 20;
-                            Console.WriteLine($"Jelenlegi kedved: {kedv} ");
-                            Console.WriteLine("------------------------------");
-                            Console.WriteLine("Véget ért az óra");
-                            return;
+                            Thread.Sleep(1500);
+                            Console.Clear();
+
+                            probalkozasok = 3;
+
                         }
                         else
                         {
@@ -119,17 +117,17 @@ namespace Irodalom_minigame
                             if (kedv <= 0)
                             {
                                 Console.WriteLine("Vége a játéknak, mert a kedved 0 alá ment.");
-                                return;
+
                             }
                             else if (probalkozasok == 3)
                             {
-                                Console.WriteLine($"Hármat sorozatban? Gratulálok... Véget ért az óra. A helyes válasz: {helyesEvszam}");
+                                Console.WriteLine($"Hármat sorozatban? Gratulálok... Véget ért az óra. A helyes válasz: {helyesSorszam}");
                                 kedv -= 30;
                                 Console.WriteLine($"Jelenlegi kedved: {kedv} ");
                                 Console.WriteLine("------------------------------");
                                 Console.WriteLine("Véget ért az óra");
                                 Console.ReadLine();
-                                return;
+
 
                             }
                             else if (probalkozasok == 1)
@@ -146,6 +144,11 @@ namespace Irodalom_minigame
                         }
                     }
                 }
+                kedv += 20;
+                Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                Console.WriteLine("------------------------------");
+                Console.WriteLine("Véget ért az óra");
+
             }
 
             Console.ReadLine();
@@ -161,23 +164,24 @@ namespace Irodalom_minigame
             {
 
 
-                do { 
-
-                if(Console.KeyAvailable)
+                do
                 {
 
-                    ch = Console.ReadKey(true).Key;
-                }
+                    if (Console.KeyAvailable)
+                    {
+
+                        ch = Console.ReadKey(true).Key;
+                    }
 
 
                 }
 
-                while ((ch != ConsoleKey.DownArrow) && !isCanceled) ;
+                while ((ch != ConsoleKey.DownArrow) && !isCanceled);
                 {
-                       
+
                 }
 
- 
+
             });
             thread.Start();
 
@@ -233,9 +237,8 @@ namespace Irodalom_minigame
 
             isCanceled = true;
 
-       
+
 
         }
     }
 }
-    
