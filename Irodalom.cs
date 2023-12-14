@@ -12,9 +12,6 @@ namespace Atika_simulator
         public static int value { get; set; } = 0;
         public static void IrodalomGame()
         {
-
-
-            int kedv = 100;
             Random random = new Random();
 
             int[] evszamok = { 1823, 1837, 0411, 1848, 1590, 31 };
@@ -103,8 +100,8 @@ namespace Atika_simulator
                         if (felhasznaloValasz == helyesEvszam)
                         {
                             Console.WriteLine("Ügyes kismackó vagy!");
-                            kedv += 20;
-                            Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                            Program.Kedve += 20;
+                            Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                             Console.WriteLine("------------------------------");
                             Console.WriteLine("Véget ért az óra");
                             return;
@@ -113,7 +110,7 @@ namespace Atika_simulator
                         {
                             probalkozasok++;
 
-                            if (kedv <= 0)
+                            if (Program.Kedve <= 0)
                             {
                                 Console.WriteLine("Vége a játéknak, mert a kedved 0 alá ment.");
                                 return;
@@ -121,8 +118,8 @@ namespace Atika_simulator
                             else if (probalkozasok == 3)
                             {
                                 Console.WriteLine($"Hármat sorozatban? Gratulálok... Véget ért az óra. A helyes válasz: {helyesEvszam}");
-                                kedv -= 30;
-                                Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                                Program.Kedve -= 30;
+                                Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                                 Console.WriteLine("------------------------------");
                                 Console.WriteLine("Véget ért az óra");
                                 Console.ReadLine();

@@ -10,9 +10,6 @@ namespace Atika_simulator
     {
         public static void AdtaBazisGame()
         {
-            int kedv = 100;
-
-
             Random random = new Random();
 
             string[] valasz = { "megye", "letszam", "megye", "megye", "allapot" };
@@ -47,8 +44,8 @@ namespace Atika_simulator
                     if (felhasznaloValasz == helyesValasz)
                     {
                         Console.WriteLine("\nÜgyes vagy, helyes válasz!");
-                        kedv += 20;
-                        Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                        Program.Kedve += 20;
+                        Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                         Console.WriteLine("------------------------------");
                         Console.WriteLine("Véget ért az óra");
                         Console.ReadLine();
@@ -58,7 +55,7 @@ namespace Atika_simulator
                     {
                         probalkozasok++;
 
-                        if (kedv <= 0)
+                        if (Program.Kedve <= 0)
                         {
                             Console.WriteLine("Vége a játéknak, mert a kedved 0 alá ment.");
                             return;
@@ -66,8 +63,8 @@ namespace Atika_simulator
                         else if (probalkozasok == 2)
                         {
                             Console.WriteLine($"Sajnálom, két rossz válasz után nincs több lehetőséged. A helyes válasz: {helyesValasz}");
-                            kedv -= 30;
-                            Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                            Program.Kedve -= 30;
+                            Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                             Console.WriteLine("------------------------------");
                             Console.WriteLine("Véget ért az óra");
                             Console.ReadLine();

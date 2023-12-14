@@ -12,11 +12,6 @@ namespace Atika_simulator
         public static int value { get; set; } = 0;
         public static void NyelvtanGame()
         {
-
-
-            int kedv = 100;
-            Random random = new Random();
-
             string[] helyes = { "ly", "j", "ly", "", "j", "ly", "j", "j", "", "j", "j" };
             string[] kiegeszites = { "hü_e", "ka_a", "sú_", "di_ó", "sú_os", "pá_a", "kussol_", "hal_ meg", "kami_on", "sa_t", "se_tosztódás", };
 
@@ -114,7 +109,7 @@ namespace Atika_simulator
                         {
                             probalkozasok++;
 
-                            if (kedv <= 0)
+                            if (Program.Kedve <= 0)
                             {
                                 Console.WriteLine("Vége a játéknak, mert a kedved 0 alá ment.");
 
@@ -122,8 +117,8 @@ namespace Atika_simulator
                             else if (probalkozasok == 3)
                             {
                                 Console.WriteLine($"Hármat sorozatban? Gratulálok... Véget ért az óra. A helyes válasz: {helyesSorszam}");
-                                kedv -= 30;
-                                Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                                Program.Kedve -= 30;
+                                Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                                 Console.WriteLine("------------------------------");
                                 Console.WriteLine("Véget ért az óra");
                                 Console.ReadLine();
@@ -144,8 +139,8 @@ namespace Atika_simulator
                         }
                     }
                 }
-                kedv += 20;
-                Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                Program.Kedve += 20;
+                Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                 Console.WriteLine("------------------------------");
                 Console.WriteLine("Véget ért az óra");
 

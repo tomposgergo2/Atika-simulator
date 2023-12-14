@@ -13,10 +13,6 @@ namespace Atika_simulator
         public static void SzakmaiAngolGame()
         {
 
-
-            int kedv = 100;
-            Random random = new Random();
-
             string[] angol = { "house", "hat", "name", "dog", "cat", "flower", "ball", "table", "chair", "sky", "fire", "water" };
             string[] magyar = { "ház", "kalap", "név", "kutya", "macska", "virág", "labda", "asztal", "szék", "égbolt", "tűz", "víz" };
 
@@ -115,7 +111,7 @@ namespace Atika_simulator
                         {
                             probalkozasok++;
 
-                            if (kedv <= 0)
+                            if (Program.Kedve <= 0)
                             {
                                 Console.WriteLine("Vége a játéknak, mert a kedved 0 alá ment.");
 
@@ -123,8 +119,8 @@ namespace Atika_simulator
                             else if (probalkozasok == 3)
                             {
                                 Console.WriteLine($"Hármat sorozatban? Gratulálok... Véget ért az óra. A helyes válasz: {helyesAngol}");
-                                kedv -= 30;
-                                Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                                Program.Kedve -= 30;
+                                Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                                 Console.WriteLine("------------------------------");
                                 Console.WriteLine("Véget ért az óra");
                                 Console.ReadLine();
@@ -145,8 +141,8 @@ namespace Atika_simulator
                         }
                     }
                 }
-                kedv += 20;
-                Console.WriteLine($"Jelenlegi kedved: {kedv} ");
+                Program.Kedve += 20;
+                Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
                 Console.WriteLine("------------------------------");
                 Console.WriteLine("Véget ért az óra");
 
