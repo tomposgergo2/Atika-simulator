@@ -185,28 +185,24 @@ namespace Atika_simulator
         {
             Irodalom.IrodalomGame();
             BentToltottOrak += 1;
-            Console.WriteLine("12 terem \n Irodalom van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void T14()
         {
             Fizika.FizikaGame();
             BentToltottOrak += 1;
-            Console.WriteLine("14 terem \n Fizika van atika szenved");
             Thread.Sleep(2000);
         }
         static void T15()
         {
             Fizika.FizikaGame();
             BentToltottOrak += 1;
-            Console.WriteLine("15 terem \n Fizika van atika szenved");
             Thread.Sleep(2000);
         }
         static void T025()
         {
             Matek.MatekGame();
             BentToltottOrak += 1;
-            Console.WriteLine("025 terem \n Matek van Atika a sötétségből a homály felé mozog");
             Thread.Sleep(2000);
         }
         
@@ -214,7 +210,6 @@ namespace Atika_simulator
         {
             Nyelvtan.NyelvtanGame();
             BentToltottOrak += 1;
-            Console.WriteLine("025 terem \n Matek van Atika a sötétségből a homály felé mozog");
             Thread.Sleep(2000);
         }
 
@@ -227,21 +222,18 @@ namespace Atika_simulator
         {
             Tori.ToriGame();
             BentToltottOrak += 1;
-            Console.WriteLine("106 terem \n Töri van Atika próbál figyelni");
             Thread.Sleep(2000);
         }
         static void T108()
         {
             Nemet.NemetGame();
             BentToltottOrak += 1;
-            Console.WriteLine("108 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void T110()
         {
             Nemet.NemetGame();
             BentToltottOrak += 1;
-            Console.WriteLine("110 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void T112()
@@ -251,7 +243,6 @@ namespace Atika_simulator
             Console.WriteLine("Csak vicceltem megy a tiktok");
             Telefon -= 20; 
             BentToltottOrak += 1;
-            Console.WriteLine("112 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
 
@@ -263,42 +254,36 @@ namespace Atika_simulator
         {
             AdatBazis.AdtaBazisGame();
             BentToltottOrak += 1;
-            Console.WriteLine("202 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void T204()
         {
             Matek.MatekGame();  
             BentToltottOrak += 1;
-            Console.WriteLine("204 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void T208()
         {
             Irodalom.IrodalomGame();
             BentToltottOrak += 1;
-            Console.WriteLine("208 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void T212()
         {
             Tori.ToriGame();
             BentToltottOrak += 1;
-            Console.WriteLine("212 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void TT4()
         {
             SzakmaiAngol.SzakmaiAngolGame();
             BentToltottOrak += 1;
-            Console.WriteLine("T4 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
         static void TT6()
         {
             Nemet.NemetGame();
             BentToltottOrak += 1;
-            Console.WriteLine("T6 terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
 
@@ -310,7 +295,6 @@ namespace Atika_simulator
         {
             Tesi.TesiGame();
             BentToltottOrak += 1;
-            Console.WriteLine("Tesi terem \n Fizika van atika unatkozik");
             Thread.Sleep(2000);
         }
 
@@ -322,18 +306,13 @@ namespace Atika_simulator
         {
             DigitalTechnika.DigitalTechGame();
             BentToltottOrak += 1;
-            //Nyomod szücsi
-            Console.Clear();
-            Console.WriteLine("Nyomod szücsi");
             Thread.Sleep(2000);
         }
         static void TB8()
         {
-            
+            Halozat.HalozatGame();  
             BentToltottOrak += 1;
-            //Hörbi geci
             Console.Clear();
-            Console.WriteLine("Hörbi geci");
             Thread.Sleep(2000);
         }
 

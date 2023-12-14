@@ -13,8 +13,9 @@ namespace Atika_simulator
             Random random = new Random();
             int[] evszamok = { 1222, 1526, 1456, 896, 1945, 1939, 1914, 1918 };
             string[] esemenyek = { "Aranybulla", "mohácsi csata", "nándorfehérvári csata", "Honfoglalás", "Második világháború vége", "Második világháború kezdete", "Első világháború kezdete", "Első világháború vége" };
-
-            Console.WriteLine("Üdv a történelem órán!");
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Üdv a történelem órán!");
+            Console.Write("  ====================================================================================================================\n\n  ");
 
             for (int i = 0; i < evszamok.Length; i++)
             {

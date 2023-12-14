@@ -16,8 +16,9 @@ namespace Atika_simulator
 
             int[] evszamok = { 1823, 1837, 0411, 1848, 1590, 31 };
             string[] esemenyek = { "Himnusz kiadása", "Szózat", "Magyar költészet napja (HHNN)", "Nemzeti dal", "Első magyar nyelvű Biblia", "Hány versszakos a walesi bárdok", };
-
-            Console.WriteLine("Megérkeztél az irodalom órára!\n");
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Megérkeztél az irodalom órára!");
+            Console.Write("  ====================================================================================================================\n\n  ");
 
             Console.Write("1. Telefonozol az órán --> ");
 

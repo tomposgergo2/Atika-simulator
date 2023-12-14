@@ -16,7 +16,9 @@ namespace Atika_simulator
             string[] angol = { "house", "hat", "name", "dog", "cat", "flower", "ball", "table", "chair", "sky", "fire", "water" };
             string[] magyar = { "ház", "kalap", "név", "kutya", "macska", "virág", "labda", "asztal", "szék", "égbolt", "tűz", "víz" };
 
-            Console.WriteLine("Megérkeztél az angol órára! (Már ha részt veszel az órán....)\n");
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Megérkeztél az angol órára! (Már ha részt veszel az órán....)");
+            Console.Write("  ====================================================================================================================\n\n  ");
 
             Console.Write("1. Telefonozol az órán --> ");
 

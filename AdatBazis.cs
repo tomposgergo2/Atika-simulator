@@ -19,8 +19,9 @@ namespace Atika_simulator
                          "\n\tSelect sum(aerob.letszam) as letszam\n\tfrom aerob inner JOIN     \n\t\tmegye on aerob.mkod = ?.kod\n\twhere megye.nev = 'Somogy'\n\tand aerob.nem = 0;",
                          "\n\tSelect aerob.letszam\n\tfrom aerob inner join\n\t\tmegye on aerob.mkod = megye.kod inner join\n\t\tallapot on aerob.allkod = ?.kod\n\twhere allapot.nev = 'egészséges'\n\tand megye.nev = 'Zala'\n\tand aerob.nem = 1;"
                        };
-
-            Console.WriteLine("Na Jónapot az adatbázis kezelés órán!");
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Na Jónapot az adatbázis kezelés órán!");
+            Console.Write("  ====================================================================================================================\n\n  ");
 
 
             // Játék folytatása

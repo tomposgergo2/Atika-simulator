@@ -14,8 +14,9 @@ namespace Atika_simulator
         {
             string[] helyes = { "ly", "j", "ly", "", "j", "ly", "j", "j", "", "j", "j" };
             string[] kiegeszites = { "hü_e", "ka_a", "sú_", "di_ó", "sú_os", "pá_a", "kussol_", "hal_ meg", "kami_on", "sa_t", "se_tosztódás", };
-
-            Console.WriteLine("Megérkeztél a nyelvtan órára! (Már ha részt veszel az órán....\n");
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Megérkeztél a nyelvtan órára! (Már ha részt veszel az órán....");
+            Console.Write("  ====================================================================================================================\n\n  ");
 
             Console.Write("1. Telefonozol az órán --> ");
 

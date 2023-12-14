@@ -12,7 +12,9 @@ namespace Atika_simulator
         public static int value { get; set; } = 0;
         public static void DigitalTechGame()
         {
-            Console.WriteLine("Megjöttél a szaunába... Unalmas mint a szar szóval had szóljon a TikTok!");
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Megjöttél a szaunába... Unalmas mint a szar szóval had szóljon a TikTok!"); 
+            Console.Write("  ====================================================================================================================\n\n  ");
 
             Thread.Sleep(4000);
 

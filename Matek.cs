@@ -13,8 +13,9 @@ namespace Atika_simulator
             Random random = new Random();
             int[] megoldas = { 36, 25, 174, 200, 63, 64, 301, 1280 };
             string[] szamolasok = { "6 * 6", "5 * 5", "125 + 49", "144 + 56", "7 * 9", "8 * 8", "256 + 45", "1025 + 255" };
-
-            Console.WriteLine("Üdv matek órán!");
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Üdv matek órán!");
+            Console.Write("  ====================================================================================================================\n\n  ");
 
             // Telefonozás választás
             Console.Write("Atika, telefonozol? (igen/nem): ");

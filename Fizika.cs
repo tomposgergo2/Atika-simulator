@@ -18,8 +18,9 @@ namespace Atika_simulator
 
             string[] valasz = { "t", "t", "1", "w", "r", "a", "t", "n" };
             string[] kepletek = { "v = s / ?", "s = v * ?", "f = ? / T", "f = ? * t", "V(k) = 2 * ? *  π * f", "F = m * ?", "T = 1 / ?", "f = ? / Δt" };
-
-            Console.WriteLine("Üdv a fizika órán!");
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Üdv a fizika órán!");
+            Console.Write("  ====================================================================================================================\n\n  ");
 
             // Mentésítő felhasználása
             Console.Write("Felhasználná a mentesítőt? (Igen: 1 / Nem: 0): ");
