@@ -13,8 +13,6 @@ namespace Atika_simulator
 
         public static void FizikaGame() 
         {
-            
-            int mentesito = 1; // Mentesítő számláló
 
             Random random = new Random();
 
@@ -99,11 +97,5 @@ namespace Atika_simulator
             }
             Console.ReadLine();
         }
-        static void EztKApdKi()
-        {
-
-        }
-
-    }
-    
+    }   
 }
