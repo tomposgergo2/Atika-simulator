@@ -10,8 +10,7 @@ namespace Atika_simulator
     {
         public static void NemetGame() 
         {
-            // ide írd ami lefusson ............................................................................................................
-            static void Main()
+            static void MainGame()
             {
                 Console.WriteLine("Megérkeztél német órára!");
                 Program.Telefon += 10;
