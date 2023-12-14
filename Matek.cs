@@ -54,7 +54,7 @@ namespace Atika_simulator
             {
 
                 Console.WriteLine("Attila figyelj és csináld meg a feladatot!");
-
+                Program.Telefon += 25;
                 for (int i = 0; i < 2; i++) // Két kérdés
                 {
                     int index = random.Next(0, megoldas.Length);
