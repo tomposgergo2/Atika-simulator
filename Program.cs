@@ -613,6 +613,7 @@ namespace Atika_simulator
         }
         static void KondiGame()
         {
+            Telefon += 20;
             int suly = kivalasztas();
             int b = suly;
             int c = suly;
