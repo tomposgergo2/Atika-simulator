@@ -10,17 +10,17 @@ namespace Atika_simulator
     {
         public static void NemetGame() 
         {
-            static void MainGame()
-            {
-                Console.WriteLine("Megérkeztél német órára!");
-                Program.Telefon += 10;
-                KiirLehetosegek();
-                Választás();
+            Console.Write("\n\n  ====================================================================================================================\n  ");
+            Console.WriteLine("  Megérkeztél német órára!");
+            Console.Write("  ====================================================================================================================\n\n  ");
+            Program.Telefon += 10;
+            KiirLehetosegek();
+            Választás();
 
-                Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
-                Console.WriteLine("------------------------------");
-                Console.WriteLine("Véget ért az óra!");
-            }
+            Console.WriteLine($"Jelenlegi kedved: {Program.Kedve} ");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Véget ért az óra!");
+            
 
             static void KiirLehetosegek()
             {
