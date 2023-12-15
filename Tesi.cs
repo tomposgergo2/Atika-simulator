@@ -21,7 +21,7 @@ namespace Atika_simulator
             {
                 Console.WriteLine("  Atika nem tesizik. Véget ért az óra.");
                 Program.Kedve -= 10;
-                Program.Telefon += 35;
+                Program.Telefon -= 35;
                 Console.WriteLine($"  Jelenlegi kedved: {Program.Kedve}");
                 Console.WriteLine($"  Akkumulátor szint: {Program.Telefon}");
                 Console.WriteLine("  ------------------------------");
