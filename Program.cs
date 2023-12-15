@@ -119,9 +119,16 @@ namespace Atika_simulator
         }
         static void MaradjOtthon()
         {
-            Console.WriteLine("\n\nAtikának rossz volt a közérzete így otthon maradt majd holnap megpróbálja újra");
-            Thread.Sleep(5000);
-            Environment.Exit(0);
+            if (JedlikbenVagy == false)
+            {
+                Console.WriteLine("\n\nAtikának rossz volt a közérzete így otthon maradt majd holnap megpróbálja újra");
+                Thread.Sleep(5000);
+                Environment.Exit(0);
+            }
+            else
+            {
+                Console.WriteLine("Hazaértél épségben, Gratulálunk");
+            }
         }
         static void Szomod()
         {
