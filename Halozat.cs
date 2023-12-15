@@ -8,19 +8,19 @@ namespace Atika_simulator
 {
     internal class Halozat
     {
-        public static void HalozatGame()
-        {
         public static int value = 0;
         static object consoleLock = new object();
-        static void Main(string[] args)
+        public static void HalozatGame()
         {
+
+
             for (int i = 0; i < 5; i++)
             {
                 KondiGame();
             }
             Console.Clear();
             Console.WriteLine("Vége a csodának. ");
-          
+
         }
         static int kivalasztas()
         {
@@ -157,7 +157,8 @@ namespace Atika_simulator
             Console.Clear();
             
             
-        }
+       
+
         }
     }
 }
